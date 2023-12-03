@@ -1,0 +1,54 @@
+html {
+    background-color: white;            /*網頁背景顏色*/
+  }
+
+/* 主要內容區域的樣式 */
+.image-with-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-with-text img {
+  width: 500px;
+  height: auto; /* 根據需要調整高度 */
+  margin-right: 20px;
+}
+
+.image-with-text h1,
+.image-with-text h2 {
+  font-size: 30px; /* 基本字體大小 */
+}
+
+
+/* 側邊欄的樣式 */
+.sidebar {
+  font-size: 30px; /* 基本字體大小 */
+  width: 20%; /* 根據需要調整寬度 */
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed; /* 固定位置以保持可見性 */
+  top: 0; /* 與頂部的位置 */
+  right: 0; /* 與右邊的位置 */
+  height: calc(100% - 80px); /* 占據整個視窗的高度 */
+  overflow-y: auto; /* 如果內容超出高度，啟用垂直滾動 */
+  
+}
+
+/* 標頭和頁尾的樣式（可選） */
+header {
+  background-color: pink;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  height: 60px; /* 調整 header 的高度 */
+}
+
+header p {
+  font-size: 40px; /* 基本字體大小 */
+  line-height: 0; /* 調整行高，避免文字重疊或被切掉 */
+  color: white;
+}

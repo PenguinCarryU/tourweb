@@ -1,0 +1,61 @@
+html {
+    background-color: white;            /*網頁背景顏色*/
+  }
+
+/* 主要內容區域的樣式 */
+.main-content {
+  width: 80%; /* 根據需要調整寬度 */
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.main-image {
+  width: 500px;
+  height: auto;
+  display: block;
+  /* 其他樣式 */
+}
+#scrollTopButton {
+  display: none; /* 初始状态隐藏按钮 */
+  position: fixed; /* 固定在屏幕上 */
+  bottom: 20px; /* 距离底部的距离 */
+  right: 20px; /* 距离右侧的距离 */
+  font-size: 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+}
+/* 側邊欄的樣式 */
+.sidebar {
+  font-size: 30px; /* 基本字體大小 */
+  width: 20%; /* 根據需要調整寬度 */
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed; /* 固定位置以保持可見性 */
+  top: 0; /* 與頂部的位置 */
+  right: 0; /* 與右邊的位置 */
+  height: calc(100% - 80px); /* 占據整個視窗的高度 */
+  overflow-y: auto; /* 如果內容超出高度，啟用垂直滾動 */
+}
+
+/* 標頭和頁尾的樣式（可選） */
+header {
+  background-color: pink;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  height: 60px; /* 調整 header 的高度 */
+}
+
+header p {
+  font-size: 40px; /* 基本字體大小 */
+  line-height: 0; /* 調整行高，避免文字重疊或被切掉 */
+  color: white;
+}
